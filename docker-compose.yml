@@ -14,14 +14,14 @@ services:
     volumes:
       - "trainvol"
 
-   loan:
+  loan:
     image: loan:v1
     ports:
       - "8002:80"
     volumes:
       - "loanvol"
 
-   filght:
+  filght:
     image: filght:v1
     ports:
       - "8003:80"

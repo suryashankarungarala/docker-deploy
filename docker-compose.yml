@@ -1,0 +1,29 @@
+version: "3"
+services:
+  movie:
+    image: movie:v1
+    ports: 
+      - "8000:80"
+    volumes:
+      - "movievol"
+
+  train:
+    image: train:v1
+    ports:
+      - "8001:80"
+    volumes:
+      - "trainvol"
+
+   loan:
+    image: loan:v1
+    ports:
+      - "8002:80"
+    volumes:
+      - "loanvol"
+
+   filght:
+    image: filght:v1
+    ports:
+      - "8003:80"
+    volumes:
+      - "filghtvol"     
